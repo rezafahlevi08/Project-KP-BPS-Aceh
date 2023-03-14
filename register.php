@@ -54,14 +54,14 @@
                 <span class="app-brand-logo demo">
                   <img src="assets/img/logo/logo.png" width="80" alt="Logo Badan Pusat Statistika">
                 </span>
-                <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
+                <!-- <span class="app-brand-text demo text-body fw-bolder">Sneat</span> -->
               </a>
             </div>
             <!-- /Logo -->
             <h4 class="mb-2">Adventure starts here 🚀</h4>
             <p class="mb-4">Make your app management easy and fun!</p>
 
-            <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+            <form id="formAuthentication" class="mb-3" action="proses/register-proses.php" method="POST">
               <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" autofocus />
@@ -70,6 +70,12 @@
                 <label class="form-label" for="password">Password</label>
                 <div class="input-group input-group-merge">
                   <input type="password" id="password" class="form-control" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
+                </div>
+              </div>
+              <div class="mb-3 form-password-toggle">
+                <label class="form-label" for="password2">Repeat Password</label>
+                <div class="input-group input-group-merge">
+                  <input type="password" id="password2" class="form-control" name="password2" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
                 </div>
               </div>
               <button class="btn btn-primary d-grid w-100" name="register">Sign up</button>

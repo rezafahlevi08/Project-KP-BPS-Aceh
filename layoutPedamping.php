@@ -140,7 +140,7 @@ if (!isset($_SESSION['login'])) {
                     </li>
 
                     <li class="menu-item">
-                        <a href="index.html" class="menu-link">
+                        <a href="proses/logout.php" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-log-out-circle"></i>
                             <div data-i18n="Analytics">Logout</div>
                         </a>

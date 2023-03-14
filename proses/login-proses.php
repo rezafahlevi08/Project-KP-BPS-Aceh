@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_POST['login'])) {
-    $koneksi = new mysqli("localhost:8080", "root", "", "projectkp");
+    $koneksi = new mysqli("localhost", "root", "", "projectkp");
     //sesuaikan dengan namenya
     $username = $_POST['username'];
     $password = $_POST['password'];

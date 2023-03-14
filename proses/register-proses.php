@@ -2,7 +2,7 @@
 
 if (isset($_POST['register'])) {
 
-    $koneksi = new mysqli("localhost:8080", "root", "", "projectkp");
+    $koneksi = new mysqli("localhost", "root", "", "projectkp");
     //sesuaikan dengan namenya
     $username = strtolower(stripslashes(($_POST['username'])));
     $password = mysqli_real_escape_string($koneksi, $_POST['password']);
