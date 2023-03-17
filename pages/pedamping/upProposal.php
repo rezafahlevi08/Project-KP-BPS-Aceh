@@ -26,20 +26,19 @@
 
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="row">
-            <div class="col-lg-12 mb-4 order-0">
+            <div class="col-lg-8 mb-4 order-0">
                 <div class="card">
-                    <div class="d-flex align-items-end row">
-                        <div class="col-sm-7">
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">Wellcome Back John! 🎉</h5>
-                                <p class="mb-4">
-                                    You have successfully entered the dashboard page. Here, you can manage various aspects of your website easily. Hope you enjoyed your experience here. Thanks for being part of our team!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-5 text-center text-sm-left">
-                            <div class="card-body pb-0 px-0 px-md-4">
-                                <img src="assets/img/illustrations/man-with-laptop-light.png" height="150" alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png" data-app-light-img="illustrations/man-with-laptop-light.png" />
+                    <div class="col-sm-12">
+                        <h5 class="card-header">Pengajuan Penerima Bantuan</h5>
+                        <div class="card-body">
+                            <div>
+                                <form action="">
+                                    <label for="proposal" class="form-label">File Proposal</label>
+                                    <input type="file" class="form-control" id="proposal" />
+                                    <div class="mt-4">
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
