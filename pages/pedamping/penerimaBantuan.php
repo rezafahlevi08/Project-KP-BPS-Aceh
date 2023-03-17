@@ -47,8 +47,8 @@
                                             <td>123456789</td>
                                             <td>Nama Desa</td>
                                             <td>
-                                                <a class="badge bg-label-success" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Monitor</a>
-                                                <a class="badge bg-label-danger" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                                                <a class="badge bg-label-success" href="layoutPedamping.php?page=pedamping/monitor.php"><i class="bx bx-edit-alt me-1"></i> Monitor</a>
+                                                <a class="badge bg-label-danger" href="layoutPedamping.php?page=pedamping/delete.php"><i class="bx bx-trash me-1"></i> Delete</a>
                                             </td>
                                         </tr>
                                     </tbody>
