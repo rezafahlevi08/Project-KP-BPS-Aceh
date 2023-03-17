@@ -36,7 +36,32 @@ if (isset($_POST['login'])) {
             </script>";
                 exit;
             }
+//s
         } else {
+            $result = mysqli_query($koneksi, "SELECT * FROM tb_admin WHERE username = '$username'");
+
+        // cek username
+        if (mysqli_num_rows($result) === 1) {
+
+            // cek password
+            $row = mysqli_fetch_assoc($result);
+            if (password_verify($password, $row["password"])) {
+                // set session
+                $_SESSION['login'] = true;
+
+                $_SESSION['username']    = $row['username'];
+                header("Location: ../layoutAdmin.php?page=admin/dashboard.php");
+                exit;
+            } else {
+                echo "<script>
+            alert('Password Salah!');
+            window.location.href='../index.php';
+            </script>";
+                exit;
+            }
+     }
+//s
+         else {
             echo "<script>
             alert('Username Tidak Tersedia!');
             window.location.href='../index.php';
@@ -44,4 +69,5 @@ if (isset($_POST['login'])) {
             exit;
         }
     }
+}
 }
