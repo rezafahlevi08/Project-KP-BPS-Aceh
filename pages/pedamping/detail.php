@@ -29,28 +29,37 @@
                         <!-- Basic Bootstrap Table -->
                         <div class="card">
                             <div class="card-header">
-                                <table cellpadding="10">
-                                    <tr>
-                                        <td>Kode Bantuan</td>
-                                        <td>:</td>
-                                        <td>K001</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Nama Kepala Keluarga</td>
-                                        <td>:</td>
-                                        <td>Nama Orang</td>
-                                    </tr>
-                                    <tr>
-                                        <td>No NIK</td>
-                                        <td>:</td>
-                                        <td>1234567890</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Desa</td>
-                                        <td>:</td>
-                                        <td>Desa A</td>
-                                    </tr>
-                                </table>
+                                <div class="row">
+                                    <div class="col col-md-10">
+                                        <table cellpadding="10">
+                                            <tr>
+                                                <td>Kode Bantuan</td>
+                                                <td>:</td>
+                                                <td>K001</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama Kepala Keluarga</td>
+                                                <td>:</td>
+                                                <td>Nama Orang</td>
+                                            </tr>
+                                            <tr>
+                                                <td>No NIK</td>
+                                                <td>:</td>
+                                                <td>1234567890</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Desa</td>
+                                                <td>:</td>
+                                                <td>Desa A</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col col-md-2">
+                                        <a class="badge bg-label-success" href="layoutPedamping.php?page=pedamping/export.php"><i class="bx bx-export me-1"></i> Export</a>
+                                    </div>
+
+                                </div>
+
                             </div>
                             <div class="table-responsive text-nowrap">
                                 <table class="table">
@@ -59,7 +68,6 @@
                                             <th>No</th>
                                             <th>Tanggal</th>
                                             <th>Progres</th>
-                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-border-bottom-0">
@@ -67,9 +75,6 @@
                                             <td>1</td>
                                             <td>13 Maret 2023</td>
                                             <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, perferendis.</td>
-                                            <td>
-                                                <a class="badge bg-label-success" href="layoutPedamping.php?page=pedamping/monitor.php"><i class="bx bx-export me-1"></i> Export</a>
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
