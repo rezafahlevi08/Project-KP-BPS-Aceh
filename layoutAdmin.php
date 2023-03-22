@@ -21,7 +21,7 @@ if (!isset($_SESSION['login'])) {
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/logo.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -60,7 +60,9 @@ if (!isset($_SESSION['login'])) {
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="" class="app-brand-link">
+                        <div class="center">
                         <img src="assets/img/logo/logo.png" alt="logo bps" width="50">
+                        </div>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -69,36 +71,23 @@ if (!isset($_SESSION['login'])) {
                 </div>
 
                 <div class="menu-inner-shadow"></div>
-
+                <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Home</span>
+                    </li>
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
                     <li class="menu-item">
-                        <a href="layoutPedamping.php?page=pedamping/dashboard.php" class="menu-link">
+                        <a href="layoutAdmin.php?page=admin/dashboard.php" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>
 
-                    <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Pages</span>
-                    </li>
                     <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                            <div data-i18n="Account Settings">Monitoring</div>
+                        <a href="layoutAdmin.php?page=admin/tambah_calon_penerima.php" class="menu-link">
+                            <i class='menu-icon tf-icons bx bx-plus' ></i>
+                            <div data-i18n="Analytics">Tambah</div>
                         </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="layoutPedamping.php?page=pedamping/penerimaBantuan.php" class="menu-link">
-                                    <div data-i18n="Account">Penerima Bantuan</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="layoutPedamping.php?page=pedamping/upProposal.php" class="menu-link">
-                                    <div data-i18n="Notifications">Upload Proposal</div>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
 
                     <li class="menu-header small text-uppercase">
