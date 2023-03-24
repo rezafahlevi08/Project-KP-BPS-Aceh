@@ -11,7 +11,7 @@
                         <!-- Search -->
                         <div class="navbar-nav align-items-center">
                             <div class="nav-item d-flex align-items-center">
-                                <h3 class="my-2">Penerima Bantuan</h3>
+                                <h3 class="my-2">Detail Penerima Bantuan</h3>
                             </div>
                         </div>
                         <!-- /Search -->
@@ -28,29 +28,53 @@
 
                         <!-- Basic Bootstrap Table -->
                         <div class="card">
-                            <h5 class="card-header"><a href="#" class="btn btn-primary">Upload Proposal</a></h5>
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col col-md-10">
+                                        <table cellpadding="10">
+                                            <tr>
+                                                <td>Kode Bantuan</td>
+                                                <td>:</td>
+                                                <td>K001</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama Kepala Keluarga</td>
+                                                <td>:</td>
+                                                <td>Nama Orang</td>
+                                            </tr>
+                                            <tr>
+                                                <td>No NIK</td>
+                                                <td>:</td>
+                                                <td>1234567890</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Desa</td>
+                                                <td>:</td>
+                                                <td>Desa A</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col col-md-2">
+                                        <a class="badge bg-label-success" href="layoutPedamping.php?page=pedamping/export.php"><i class="bx bx-export me-1"></i> Export</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
                             <div class="table-responsive text-nowrap">
                                 <table class="table">
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama Kepala Keluarga</th>
-                                            <th>NIK</th>
-                                            <th>Desa</th>
-                                            <th class="text-center">Actions</th>
+                                            <th>Tanggal</th>
+                                            <th>Progres</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-border-bottom-0">
                                         <tr>
                                             <td>1</td>
-                                            <td>Angular Project</td>
-                                            <td>123456789</td>
-                                            <td>Nama Desa</td>
-                                            <td class="text-center">
-                                                <a class="badge bg-label-success" href="layoutPedamping.php?page=pedamping/monitor.php"><i class="bx bx-edit-alt me-1"></i> Monitor</a>
-                                                <a class="badge bg-label-info" href="layoutPedamping.php?page=pedamping/detail.php"><i class="bx bx-detail me-1"></i> Detail</a>
-                                                <a class="badge bg-label-danger" href="layoutPedamping.php?page=pedamping/delete.php"><i class="bx bx-trash me-1"></i> Delete</a>
-                                            </td>
+                                            <td>13 Maret 2023</td>
+                                            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, perferendis.</td>
                                         </tr>
                                     </tbody>
                                 </table>
