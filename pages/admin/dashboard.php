@@ -54,7 +54,7 @@
                         <td>Bank Syariah Indonesia</td>
                         <td><span class="badge bg-label-primary me-1">Active</span></td>
                         <td>
-                          <a class="dropdown-item" href="javascript:void(0);" style="text-align: center;">Lihat</a>
+                          <a class="dropdown-item" href="layoutAdmin.php?page=admin/detail_aktif.php" style="text-align: center;">Lihat</a>
                         </td>
                       </tr>
 
@@ -63,7 +63,7 @@
                         <td>Badan Pusat Statistik</td>
                         <td><span class="badge bg-label-warning me-1">Proses</span></td>
                         <td>
-                          <a class="dropdown-item" href="javascript:void(0);" style="text-align: center;">Lihat</a>
+                          <a class="dropdown-item" href="layoutAdmin.php?page=admin/detail_proses.php" style="text-align: center;">Lihat</a>
                         </td>
                       </tr>
                       

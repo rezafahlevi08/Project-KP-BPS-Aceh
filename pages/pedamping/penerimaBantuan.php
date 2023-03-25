@@ -48,7 +48,7 @@
                                             <td>Nama Desa</td>
                                             <td class="text-center">
                                                 <a class="badge bg-label-success" href="layoutPedamping.php?page=pedamping/monitor.php"><i class="bx bx-edit-alt me-1"></i> Monitor</a>
-                                                <a class="badge bg-label-info" href="layoutPedamping.php?page=pedamping/detail.php"><i class="bx bx-detail me-1"></i> Detail</a>
+                                                <a class="badge bg-label-info" href="layoutPedamping.php?page=umum/detail.php"><i class="bx bx-detail me-1"></i> Detail</a>
                                                 <a class="badge bg-label-danger" href="layoutPedamping.php?page=pedamping/delete.php"><i class="bx bx-trash me-1"></i> Delete</a>
                                             </td>
                                         </tr>
