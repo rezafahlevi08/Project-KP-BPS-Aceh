@@ -40,7 +40,7 @@
                 <h5 class="card-header">
                 	Daftar Rangking 10 Besar Desa <strong>Seulalah Atas</strong> <i> (kode bantuan K0012)</i><br>
 					<div  style="font-size: 15px; position: relative; right: 19px;">
-	                	<a href="" class="nav-link" style="float:left;">Download Data Untuk Pengajuan Nama</a>
+	                	<a href="" class="nav-link" style="float:left;">Download Data Nama Calon Penerima Untuk Pendamping</a>
 	                	<a href="" class="nav-link" >Lihat Proposal</a>
                 	</div>
                 </h5>
