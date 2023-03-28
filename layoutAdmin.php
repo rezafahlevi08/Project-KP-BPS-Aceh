@@ -61,7 +61,7 @@ if (!isset($_SESSION['login'])) {
                 <div class="app-brand demo">
                     <a href="" class="app-brand-link">
                         <div class="center">
-                        <img src="assets/img/logo/logo.png" alt="logo bps" width="50">
+                            <img src="assets/img/logo/logo.png" alt="logo bps" width="50">
                         </div>
                     </a>
 
@@ -72,8 +72,8 @@ if (!isset($_SESSION['login'])) {
 
                 <div class="menu-inner-shadow"></div>
                 <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Home</span>
-                    </li>
+                    <span class="menu-header-text">Home</span>
+                </li>
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
                     <li class="menu-item">
@@ -85,7 +85,7 @@ if (!isset($_SESSION['login'])) {
 
                     <li class="menu-item">
                         <a href="layoutAdmin.php?page=admin/tambah_calon_penerima.php" class="menu-link">
-                            <i class='menu-icon tf-icons bx bx-plus' ></i>
+                            <i class='menu-icon tf-icons bx bx-plus'></i>
                             <div data-i18n="Analytics">Tambah</div>
                         </a>
                     </li>
