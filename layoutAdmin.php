@@ -90,6 +90,13 @@ if (!isset($_SESSION['login'])) {
                         </a>
                     </li>
 
+                    <li class="menu-item">
+                        <a href="layoutAdmin.php?page=admin/daftar_pedamping.php" class="menu-link">
+                            <i class='menu-icon tf-icons bx bx-user'></i>
+                            <div data-i18n="Analytics">Daftar Pedamping</div>
+                        </a>
+                    </li>
+
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Logout</span>
                     </li>
