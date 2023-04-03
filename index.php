@@ -59,9 +59,10 @@ if (isset($_SESSION['login'])) {
           <div class="card-body">
             <!-- Logo -->
             <div class="app-brand justify-content-center">
-              <a href="index.html" class="app-brand-link gap-2">
+              <a href="#" class="app-brand-link gap-2">
                 <span class="app-brand-logo demo">
-                  <img src="assets/img/logo/logo.png" width="80" alt="Logo Badan Pusat Statistika">
+                  <img src="assets/img/logo/logo.png" width="80" alt="Logo Badan Pusat Statistika" style="float:left;">
+                  <img src="assets/img/logo/usk.png" width="130">
                 </span>
                 <!-- <span class="app-brand-text demo text-body fw-bolder">BPS</span> -->
               </a>

@@ -1,3 +1,11 @@
+<?php 
+$conn = new mysqli("localhost", "root", "", "projectkp");
+
+$query = "SELECT * FROM tb_bantuan";
+$data = mysqli_query($conn, $query);
+
+ ?>
+
     <nav
             class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar"
@@ -58,23 +66,16 @@
                         </td>
                       </tr>
 
-                      <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Langsa, Selalah Atas</strong></td>
-                        <td>Badan Pusat Statistik</td>
-                        <td><span class="badge bg-label-warning me-1">Proses</span></td>
-                        <td>
-                          <a class="dropdown-item" href="layoutAdmin.php?page=admin/detail_proses.php" style="text-align: center;">Lihat</a>
-                        </td>
-                      </tr>
-                      
-                      <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Banda Aceh, Rukoh</strong></td>
-                        <td>DPR Aceh</td>
-                        <td><span class="badge bg-label-primary me-1">Active</span></td>
-                        <td>
-                          <a class="dropdown-item" href="javascript:void(0);" style="text-align: center;">Lihat</a>
-                        </td>
-                      </tr>
+                      <?php  while($bantuan = mysqli_fetch_array($data)):?>
+                        <tr>
+                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong><?= $bantuan['kabupaten']; ?>, <?= $bantuan['desa']; ?></strong></td>
+                          <td><?= $bantuan['donatur']; ?></td>
+                          <td><span class="badge bg-label-warning me-1">Proses</span></td>
+                          <td>
+                            <a class="dropdown-item" href="layoutAdmin.php?page=admin/detail_proses.php&id_bantuan=<?= $bantuan['id_bantuan']; ?>" style="text-align: center;">Lihat</a>
+                          </td>
+                        </tr>
+                      <?php endwhile ?>
 
                     </tbody>
                   </table>

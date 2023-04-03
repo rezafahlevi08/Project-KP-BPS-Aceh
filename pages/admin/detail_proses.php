@@ -1,4 +1,15 @@
- 
+<?php 
+$id_bantuan = $_GET['id_bantuan'];
+$conn = new mysqli("localhost", "root", "", "projectkp");
+
+$query_calon_penerima = "SELECT * FROM tb_calon_penerima WHERE id_bantuan = '$id_bantuan'";
+$calon_penerima = mysqli_query($conn, $query_calon_penerima);
+$no = 1;
+
+$query_bantuan = "SELECT * FROM tb_bantuan WHERE id_bantuan = '$id_bantuan'";
+$bantuan = mysqli_query($conn, $query_bantuan);
+$det_bantuan = mysqli_fetch_array($bantuan);
+ ?> 
 
                     <nav
             class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
@@ -38,7 +49,7 @@
 
               <div class="card">
                 <h5 class="card-header">
-                	Daftar Rangking 10 Besar Desa <strong>Seulalah Atas</strong> <i> (kode bantuan K0012)</i><br>
+                	Daftar Rangking <?= $det_bantuan['berapa_besar']; ?> Besar Desa <strong><?= $det_bantuan['desa']; ?></strong> <i> (kode bantuan <?= $det_bantuan['id_bantuan']; ?>)</i><br>
 					<div  style="font-size: 15px; position: relative; right: 19px;">
 	                	<a href="" class="nav-link" style="float:left;">Download Data Nama Calon Penerima Untuk Pendamping</a>
 	                	<a href="" class="nav-link" >Lihat Proposal</a>
@@ -56,106 +67,22 @@
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-                      <tr>
-                      	<td class="text-center">1</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Naruto Uzumaki</td>
-                        <td>87652319</td>
-                        <td>
-                        	<div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">2</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Hashirama Senju</td>
-                        <td>98294723</td>
-                        <td>
-                        	<div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">3</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> Madara Uchiha</td>
-                        <td>12387263</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">4</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Andi Firmansyah</td>
-                        <td>91827361</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">5</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Sugeng Sutomo</td>
-                        <td>198883647</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">6</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Andik Hermansyah</td>
-                        <td>19283753</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">7</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Irfan Firmansyah</td>
-                        <td>72839421</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">8</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Furqan</td>
-                        <td>82736455</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">9</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Fathan Adami</td>
-                        <td>01736281</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
-                      <tr>
-                      	<td class="text-center">10</td>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>Rizki Ananda</td>
-                        <td>18223123</td>
-                        <td>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
-                          </div>
-						</td>
-                      </tr>
+
+                      <?php  while($dt_calon_penerima = mysqli_fetch_array($calon_penerima)):?>
+                        <tr>
+                        	<td class="text-center"><?= $no ?></td>
+                          <td><i class="fab fa-angular fa-lg text-danger me-3"></i><?= $dt_calon_penerima['kepala_keluarga']; ?></td>
+                          <td><?= $dt_calon_penerima['nik']; ?></td>
+                          <td>
+                          	<div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" unchecked />
+                            </div>
+  						          </td>
+                      <?php 
+                        $no++;
+                        endwhile 
+                      ?>
+
                     </tbody>
                   </table>
                 </div>

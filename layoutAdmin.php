@@ -61,7 +61,8 @@ if (!isset($_SESSION['login'])) {
                 <div class="app-brand demo">
                     <a href="" class="app-brand-link">
                         <div class="center">
-                            <img src="assets/img/logo/logo.png" alt="logo bps" width="50">
+                            <img src="assets/img/logo/logo.png" alt="logo bps" width="50" style="margin-left:17px; ">
+                            <img src="assets/img/logo/usk.png" width="100">
                         </div>
                     </a>
 

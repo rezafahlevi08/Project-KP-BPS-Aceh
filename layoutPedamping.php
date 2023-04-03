@@ -60,7 +60,8 @@ if (!isset($_SESSION['login'])) {
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="" class="app-brand-link">
-                        <img src="assets/img/logo/logo.png" alt="logo bps" width="50">
+                        <img src="assets/img/logo/logo.png" alt="logo bps" width="50" style="margin-left:17px; ">
+                            <img src="assets/img/logo/usk.png" width="100">
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
