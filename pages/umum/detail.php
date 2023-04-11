@@ -55,7 +55,7 @@
                                         </table>
                                     </div>
                                     <div class="col col-md-2">
-                                        <a class="badge bg-label-success" href="layoutPedamping.php?page=pedamping/export.php"><i class="bx bx-export me-1"></i> Export</a>
+                                        <a class="badge bg-label-success" href="#"><i class="bx bx-export me-1"></i> Export</a>
                                     </div>
 
                                 </div>
